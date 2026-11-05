@@ -60,7 +60,7 @@ public class CalificacionesController {
             ca.setMateriaId(cali.getMateriaId());
             ca.setCalificacion(cali.getCalificacion());
         }
-        return ca;
+        return calificacionesRepository.save(ca);
 
 
 

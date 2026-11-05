@@ -67,7 +67,7 @@ public class MateriasController {
         if (ma.getNombreMateria() != null) {
             materia.setNombreMateria(ma.getNombreMateria());
         }
-        return materia;
+        return materiasRepository.save(materia);
     }
 
     //---------------------Metodo Post
